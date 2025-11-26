@@ -1,0 +1,20 @@
+<!-- //Ruta: mysite/accounts/templates/registration/signup.html
+
+Detalle: En este archivo se define la estructura HTML para la pagina de registro de usuarios. Se extiende una plantilla base y se incluye un formulario para que los usuarios puedan registrarse.
+
+Que hace: Proporciona una interfaz para que los nuevos usuarios creen una cuenta en el sitio web.
+
+llamado por: La vista de registro en views.py
+  -->
+
+  {% extends 'base.html' %}
+  {% block content %}
+  
+<h2>REGISTRO</h2>
+  <form method="post">
+    {% csrf_token %}
+     {{ form.as_p }} <!-- llamando al formulario definido en views.py -->
+    <button type="submit">Registrarse</button>
+    </form>
+  {% endblock %}
+  

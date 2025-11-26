@@ -1,0 +1,5 @@
+.venv
+mysite/accounts/migrations/__pycache__/
+mysite/accounts/__init__.py
+mysite/accounts/__pycache__
+mysite/mysite/__pycache__
